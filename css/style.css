@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+@import url('https://fonts.googleapis.com/css?family=Roboto:500');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: 'Roboto';
+  font-weight: 100;
+
+}
+
+
+nav {
+  width: 100%;
+  height: 65px;
+  position: fixed;
+  background: rgba(0,0,0,0.6);
+  top: 0;
+  left: 0;
+  z-index: 999;
+  box-sizing: border-box;
+  padding: 0 30px;
+  transition: .3s;
+  display: block;
+  font-size: 19px;
+  font-weight: 300;
+}
+
+nav #logo {
+  width: 65px;
+  height: 65px;
+  box-sizing: border-box;
+  padding: 5px;
+  float: left;
+  display: block;
+  margin-left: 50px;
+  background: rgba(221,44,20,0.5);
+}
+
+nav #logo img {
+  width: 100%;
+}
+
+nav ul {
+  float: left;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-top: 20px;
+  float: left;
+  display: inline;
+  list-style-type: none;
+
+}
+
+nav li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 20.5px 30px;
+}
+
+nav li a:hover {
+  background: rgba(221,44,20,0.3);
+}
+
+
+nav #contacts {
+  margin-top: 8px;
+  float: right;
+  width: 600px;
+}
+
+nav #contacts .phone {
+  width: 450px;
+  display: block;
+  float: left;
+  margin: 0;
+}
+
+nav #contacts .phone p {
+  float: left;
+  margin: 13px 0 0 10px;
+  font-weight: 500;
+}
+
+nav #contacts #socials {
+  width: 130px;
+  display: block;
+  float: right;
+  margin: 10px 0 0 0;
+}
+
+nav #contacts #socials img {
+  width: 25px;
+  margin: 2px;
+  float: left;
+}
+
+nav #contacts #socials img:hover {
+  opacity: 0.7;
+}
+
+/*_____________mainpage_______________*/
+
+#show {
+  height: 670px;
+}
+
+#show h1 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  line-height: 300px;
+}
+
+#show {
+  background: url('../img/bg/show.jpg') no-repeat center center;
+}
+
+.fader p {
+  margin: 10px;
+  padding: 0;
+  font-size: 80px;
+}
+
+.fader {
+  text-align: center;
+  padding-top: 80px;
+}
+
+.faderlow {
+  text-align: center;
+  font-size: 33px;
+  padding-top: 70px;
+}
+
+.faderlow p {
+  margin: 10px;
+}
+
+.fader2s {
+  animation: fadeIn 2s;
+}
+
+.fader4s {
+  animation: fadeIn 2s;
+  animation-delay: 1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.fader6s {
+  animation: fadeIn 2s;
+  animation-delay: 2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.fader10s {
+  animation: fadeIn 2s;
+  animation-delay: 3s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+/*____________________catalog_______________________________*/
+.catalog,
+.container {
+  width: 1350px;
+  margin: auto;
+}
+
+.catalog h1,
+.gallery h1,
+.payment h1,
+.contacts h1 {
+  margin: 0;
+  padding-top: 70px;
+  text-align: center;
+  font: 80px/1 'Roboto';
+  font-weight: 100;
+}
+
+.catalog h1,
+.payment h1 {
+  color: #000;
+}
+
+.catalog {
+  min-height: 2000px;
+}
+
+.payment {
+  min-height: 960px;
+  color: #000;
+}
+
+.payment h2 {
+  font: 25px/1 'Roboto';
+  font-weight: 500;
+  z-index: 999;
+  margin-top: 150px;
+}
+
+.payment p {
+  font: 20px/1.3 'Roboto';
+  font-weight: 300;
+  z-index: 999;
+}
+
+.bulletbox {
+  display: block;
+  float: left;
+  width: 440px;
+  height: 230px;
+  margin: 30px 5px 0 5px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.bulletbox span {
+  font: 210px/1 'Roboto';
+  font-weight: 500;
+  color: #201f1d;
+  position: absolute;
+  margin-top: 20px;
+  z-index: 0;
+  opacity: 0.3;
+}
+
+.gallery {
+  background-color: #201f1d;
+  color: #fff;
+  min-height: 950px;
+}
+
+.contacts {
+  background-color: #201f1d;
+  color: #fff;
+  min-height: 650px;
+}
+
+.gallery h1,
+.contacts h1 {
+  color: #fff;
+}
+
+
+/*_______________boxes for catalog______________*/
+.itembox {
+  float: left;
+  margin: 25px;
+  width: 400px;
+  height: 550px;
+  text-align: center;
+  color: #262626;
+}
+
+.itembox img {
+  width: 90%;
+  margin-top: 20px;
+  padding: 0;
+  border-radius: 5px;
+}
+
+.itembox .name {
+  font: 23px/1 'Roboto';
+  margin: 20px;
+  padding: 0;
+  font-weight: 300;
+}
+
+.itembox .price {
+  font: 30px/1 'Roboto';
+  font-weight: 500;
+  margin: 10px;
+}
+
+.catalog a:hover {
+  opacity: 0.95;
+}
+
+.itembox:hover {
+  box-shadow: 0 0 1px 1px #ccc;
+  border-radius: 5px;
+}
+
+/*_________slideshow______________*/
+.pic {
+  width: 1100px;
+  position: relative;
+  margin: 30px auto;
+}
+
+.pic .slide {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s ease;
+  border-radius: 0 3px 3px 0;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.4);
+}
+
+.contactbox {
+  width: 260px;
+  display: block;
+  float: left;
+  height: 250px;
+  margin: 100px 5px 60px 5px;
+}
+
+.contactbox h2 {
+  margin-bottom: 50px;
+  font: 25px/1 'Roboto';
+  font-weight: 300;
+  text-decoration: underline;
+}
+
+.contactbox p {
+  font: 17px/1 'Roboto';
+  font-weight: 300;
+}
+
+.contactbox a{
+  color: #fff;
+  font-weight: 500;
+  display: list-item;
+  list-style: none;
+  margin: 12px 0;
+  text-decoration: none;
+}
+
+.contactbox a:hover {
+  opacity: 0.7;
+}
+
+#description {
+  color: #fff;
+  background-color: #201f1d;
+  margin-top: 100px;
+  margin: 0;
+  padding: 20px;
+}
+
+#description p {
+  font: 14px/1.3 'Roboto';
+  font-weight: 100;
+  margin: 0;
+  text-align: center;
+  opacity: 0.4;
+}
